@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Card Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="game-heading" style="background-color: blue;color:white;padding: 10px;margin-top: 0px;margin-bottom: 0px;">FlipFusion 🎴</h1>
+<p class="tagline" style="font-size: 20px;">Match. Remember. Win.</p>
+  <div class="top-bar">
+    <button id="restart">🔄 Restart</button>
+    <span id="level-text">Level: 1</span>
+    <span id="time">Time: 0s</span>
+  </div>
+
+  <div id="game-board" class="game-board"></div>
+
+  <!-- 🎵 Sounds -->
+  <audio id="bg-music" src="sounds/background.mp3" loop></audio>
+  <audio id="flip-sound" src="sounds/flip.mp3"></audio>
+  <audio id="match-sound" src="sounds/match.mp3"></audio>
+  <audio id="mismatch-sound" src="sounds/wrong.mp3"></audio>
+  <audio id="win-sound" src="sounds/win.mp3"></audio>
+  <audio id="fail-sound" src="sounds/level-fail.mp3"></audio> <!-- fixed id -->
+  
+  <script src="script.js"></script>
+</body>
+</html>

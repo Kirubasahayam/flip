@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #dbeafe, #e9d5ff);
+  
+ 
+}
+
+/* Heading Container */
+.game-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Main Title */
+.game-heading h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff9a00);
+  font-family: 'Times New Roman', Times, serif;
+  
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7),
+               0px 0px 40px rgba(255, 150, 0, 0.5);
+  border: 3px solid transparent;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: inline-block;
+  animation: glowBorder 2s infinite alternate;
+}
+
+/* Subtitle */
+.game-heading p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin-top: 8px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Border Animation */
+@keyframes glowBorder {
+  0% {
+    border-color: #ff416c;
+    box-shadow: 0px 0px 10px #ff416c;
+  }
+  50% {
+    border-color: #ff9a00;
+    box-shadow: 0px 0px 20px #ff9a00;
+  }
+  100% {
+    border-color: #ff4b2b;
+    box-shadow: 0px 0px 15px #ff4b2b;
+  }
+}
+
+
+h1 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.top-bar {
+  margin: 15px;
+  font-size: 18px;
+}
+
+#restart {
+  background: #22c55e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+#restart:hover {
+  background: #16a34a;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.card {
+  width: 120px;
+  height: 160px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.card-back {
+  background: url("card-back.png") no-repeat center/cover;
+}
