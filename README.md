@@ -1,69 +1,68 @@
-# 🎴 Flip Card Memory Game
+# FlipFusion 🎴 - Flip Card Memory Game
 
-A simple and fun **Flip Card Memory Game** built with **HTML, CSS, and JavaScript**.  
-The goal is to flip the cards, match pairs, and complete the game in the shortest time.
+FlipFusion is an interactive **Flip Card Memory Game** built using
+**HTML, CSS, and JavaScript**.\
+The objective is simple: *Match. Remember. Win.*
 
----
+------------------------------------------------------------------------
 
 ## 🚀 Features
-- 🎵 **Sound Effects** – Flip, match, mismatch, win, and background music.
-- 🃏 **Flip Animation** – Smooth card flip with CSS 3D transform.
-- ⏱️ **Timer & Levels** – Tracks playtime and difficulty progression.
-- 🔄 **Restart Button** – Reset the game at any time.
-- 📱 **Responsive Design** – Works on desktop and mobile.
 
----
+-   🎨 Beautiful UI with animated card flip effect
+-   🔊 Background music and sound effects (flip, match, mismatch, win,
+    fail)
+-   ⏱ Countdown timer for each level
+-   🔄 Restart button to reset the game anytime
+-   🏆 Multiple levels with increasing difficulty
 
-## 🛠️ Tech Stack
-- **HTML5** – Structure
-- **CSS3** – Styling & animations
-- **JavaScript (Vanilla)** – Game logic & sound effects
+------------------------------------------------------------------------
 
----
+## 🛠️ Technologies Used
+
+-   **HTML5** - Structure of the game
+-   **CSS3** - Styling, animations, and responsive layout
+-   **JavaScript (Vanilla JS)** - Game logic and interactivity
+-   **Audio** - Sound effects and background music
+
+------------------------------------------------------------------------
 
 ## 📂 Project Structure
 
-📁 Pro
-┣ 📜 index.html # Main game UI
-┣ 📜 style.css # Styling & animations
-┣ 📜 script.js # Game logic (flip, match, timer, sounds)
-┣ card-back.png
-┃ ┣ 🎵 sounds/ # Flip, match, win, background music
-┣ 📜 README.md # Project documentation
+    FlipFusion/
+    ┣ 📜 index.html   # Main game UI
+    ┣ 📜 style.css    # Styling & animations
+    ┣ 📜 script.js    # Game logic (flip, match, timer, sounds)
+    ┣ 🎨 card-back.png # Card back design
+    ┣ image.png
+    ┣ 🎵 sounds/       # Game sounds (flip, match, win, fail, background)
 
-
----
+------------------------------------------------------------------------
 
 ## 🎮 How to Play
-1. Open `index.html` in your browser.
-2. Click a card to flip it.
-3. Flip another card:
-   - ✅ If they match → stay flipped.
-   - ❌ If they don’t → they flip back after a short delay.
-4. Match all pairs to win the game!
-5. Track your **time and level** on the top bar.
 
----
+1.  Open **index.html** in your browser.
+2.  Click on the cards to flip them.
+3.  Match two identical cards to score.
+4.  Complete all matches before time runs out.
+5.  Advance to the next level and test your memory!
 
+------------------------------------------------------------------------
 
+## 📷 Screenshot
 
----
+![alt text](image.png)
 
-## 🔊 Sound Effects
-- **Flip Sound** – when you click a card  
-- **Match Sound** – when two cards match  
-- **Mismatch Sound** – when two cards don’t match  
-- **Win Sound** – when you complete the game  
-- **Background Music** – loops during the game  
+------------------------------------------------------------------------
 
----
+## 📌 Future Enhancements
 
-## 🚀 Future Improvements
-- Add multiple difficulty levels (easy/medium/hard).
-- Add a high-score leaderboard.
-- Add theme customization (different card decks).
+-   🔢 Add difficulty levels with different grid sizes (4x4, 6x6, etc.)
+-   🏅 Add scoring system & leaderboard
+-   📱 Improve mobile responsiveness
+-   🎨 Add custom card themes
 
----
+------------------------------------------------------------------------
 
-## 👩‍💻 Author
-Developed by **Kiruba S** ✨  
+## 👨‍💻 Author
+
+Developed with ❤️ by **Kiruba S**
